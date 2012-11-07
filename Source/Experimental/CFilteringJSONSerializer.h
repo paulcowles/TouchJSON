@@ -6,12 +6,12 @@
 //  Copyright 2010 toxicsoftware.com. All rights reserved.
 //
 
-#import "CJSONSerializer.h"
+#import "SCAVENGERCJSONSerializer.h"
 
 typedef NSString *(^JSONConversionTest)(id inObject);
 typedef id (^JSONConversionConverter)(id inObject); // TODO replace with value transformers.
 
-@interface CFilteringJSONSerializer : CJSONSerializer {
+@interface CFilteringJSONSerializer : SCAVENGERCJSONSerializer {
 	NSSet *tests;
 	NSDictionary *convertersByName;
 }

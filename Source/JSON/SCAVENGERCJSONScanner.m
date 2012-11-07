@@ -27,9 +27,9 @@
 //  OTHER DEALINGS IN THE SOFTWARE.
 //
 
-#import "CJSONScanner.h"
+#import "SCAVENGERCJSONScanner.h"
 
-#import "CDataScanner_Extensions.h"
+#import "SCAVENGERCDataScanner_Extensions.h"
 
 #if !defined(TREAT_COMMENTS_AS_WHITESPACE)
 #define TREAT_COMMENTS_AS_WHITESPACE 0
@@ -49,7 +49,7 @@ inline static int HexToInt(char inCharacter)
 static id kNSYES = NULL;
 static id kNSNO = NULL;
 
-@interface CJSONScanner ()
+@interface SCAVENGERCJSONScanner ()
 - (BOOL)scanNotQuoteCharactersIntoString:(NSString **)outValue;
 
 - (NSError *)error:(NSInteger)inCode description:(NSString *)inDescription;
@@ -57,7 +57,7 @@ static id kNSNO = NULL;
 
 #pragma mark -
 
-@implementation CJSONScanner
+@implementation SCAVENGERCJSONScanner
 
 @synthesize strictEscapeCodes;
 @synthesize nullObject;

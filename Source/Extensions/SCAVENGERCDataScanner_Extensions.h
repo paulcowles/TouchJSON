@@ -27,9 +27,9 @@
 //  OTHER DEALINGS IN THE SOFTWARE.
 //
 
-#import "CDataScanner.h"
+#import "SCAVENGERCDataScanner.h"
 
-@interface CDataScanner (CDataScanner_Extensions)
+@interface SCAVENGERCDataScanner (CDataScanner_Extensions)
 
 - (BOOL)scanCStyleComment:(NSString **)outComment;
 - (BOOL)scanCPlusPlusStyleComment:(NSString **)outComment;

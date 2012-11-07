@@ -6,16 +6,16 @@
 //  Copyright 2011 toxicsoftware.com. All rights reserved.
 //
 
-#import "CJSONSerialization.h"
+#import "SCAVENGERCJSONSerialization.h"
 
-#import "CJSONDeserializer.h"
-#import "CJSONSerializer.h"
+#import "SCAVENGERCJSONDeserializer.h"
+#import "SCAVENGERCJSONSerializer.h"
 
-@implementation CJSONSerialization
+@implementation SCAVENGERCJSONSerialization
 
 + (BOOL)isValidJSONObject:(id)obj
     {
-    CJSONSerializer *theSerializer = [CJSONSerializer serializer];
+    SCAVENGERCJSONSerializer *theSerializer = [SCAVENGERCJSONSerializer serializer];
     return([theSerializer isValidJSONObject:obj]);
     }
 
@@ -23,14 +23,14 @@
     {
     #pragma unused (opt)
     
-    CJSONSerializer *theSerializer = [CJSONSerializer serializer];
+    SCAVENGERCJSONSerializer *theSerializer = [SCAVENGERCJSONSerializer serializer];
     NSData *theData = [theSerializer serializeObject:obj error:error];
     return(theData);
     }
 
 + (id)JSONObjectWithData:(NSData *)data options:(EJSONReadingOptions)opt error:(NSError **)error
     {
-    CJSONDeserializer *theDeserializer = [CJSONDeserializer deserializer];
+    SCAVENGERCJSONDeserializer *theDeserializer = [SCAVENGERCJSONDeserializer deserializer];
     theDeserializer.options = (opt & kCJSONReadingMutableContainers ? 0 : kJSONDeserializationOptions_MutableContainers)
         | (opt & kCJSONReadingMutableLeaves ? 0 : kJSONDeserializationOptions_MutableLeaves);
     id theObject = [theDeserializer deserialize:data error:error];

@@ -27,22 +27,22 @@
 //  OTHER DEALINGS IN THE SOFTWARE.
 //
 
-#import "CJSONDeserializer.h"
+#import "SCAVENGERCJSONDeserializer.h"
 
-#import "CJSONScanner.h"
-#import "CDataScanner.h"
+#import "SCAVENGERCJSONScanner.h"
+#import "SCAVENGERCDataScanner.h"
 
 NSString *const kJSONDeserializerErrorDomain  = @"CJSONDeserializerErrorDomain";
 
-@interface CJSONDeserializer ()
+@interface SCAVENGERCJSONDeserializer ()
 @end
 
-@implementation CJSONDeserializer
+@implementation SCAVENGERCJSONDeserializer
 
 @synthesize scanner;
 @synthesize options;
 
-+ (CJSONDeserializer *)deserializer
++ (SCAVENGERCJSONDeserializer *)deserializer
     {
     return([[[self alloc] init] autorelease]);
     }
@@ -65,11 +65,11 @@ NSString *const kJSONDeserializerErrorDomain  = @"CJSONDeserializerErrorDomain";
 
 #pragma mark -
 
-- (CJSONScanner *)scanner
+- (SCAVENGERCJSONScanner *)scanner
     {
     if (scanner == NULL)
         {
-        scanner = [[CJSONScanner alloc] init];
+        scanner = [[SCAVENGERCJSONScanner alloc] init];
         }
     return(scanner);
     }

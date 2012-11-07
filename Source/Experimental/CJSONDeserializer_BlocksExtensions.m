@@ -8,9 +8,9 @@
 
 #import "CJSONDeserializer_BlocksExtensions.h"
 
-#import "CJSONScanner.h"
+#import "SCAVENGERCJSONScanner.h"
 
-@implementation CJSONDeserializer (CJSONDeserializer_BlocksExtensions)
+@implementation SCAVENGERCJSONDeserializer (CJSONDeserializer_BlocksExtensions)
 
 - (void)deserializeAsDictionary:(NSData *)inData completionBlock:(void (^)(id result, NSError *error))block {
 	

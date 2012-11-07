@@ -31,7 +31,7 @@
 
 // NSScanner
 
-@interface CDataScanner : NSObject {
+@interface SCAVENGERCDataScanner : NSObject {
 	NSData *data;
 
 	u_int8_t *start;

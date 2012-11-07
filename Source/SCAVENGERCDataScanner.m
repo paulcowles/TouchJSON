@@ -27,9 +27,9 @@
 //  OTHER DEALINGS IN THE SOFTWARE.
 //
 
-#import "CDataScanner.h"
+#import "SCAVENGERCDataScanner.h"
 
-@interface CDataScanner ()
+@interface SCAVENGERCDataScanner ()
 @end
 
 #pragma mark -
@@ -47,7 +47,7 @@ inline static unichar CharacterAtPointer(void *start)
 
 static NSCharacterSet *sDoubleCharacters = NULL;
 
-@implementation CDataScanner
+@implementation SCAVENGERCDataScanner
 
 - (id)init
     {
