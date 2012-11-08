@@ -11,7 +11,7 @@
 typedef NSString *(^JSONConversionTest)(id inObject);
 typedef id (^JSONConversionConverter)(id inObject); // TODO replace with value transformers.
 
-@interface CFilteringJSONSerializer : SCAVENGERCJSONSerializer {
+@interface SCAVENGERCFilteringJSONSerializer : SCAVENGERCJSONSerializer {
 	NSSet *tests;
 	NSDictionary *convertersByName;
 }

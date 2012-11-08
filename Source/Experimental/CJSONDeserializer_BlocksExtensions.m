@@ -16,7 +16,7 @@
 	
 	NSError *noDataError = nil;
 	if (inData == NULL || [inData length] == 0) {
-		noDataError = [NSError errorWithDomain:kJSONDeserializerErrorDomain code:kJSONScannerErrorCode_NothingToScan userInfo:NULL];
+		noDataError = [NSError errorWithDomain:SCAVENGERkJSONDeserializerErrorDomain code:kJSONScannerErrorCode_NothingToScan userInfo:NULL];
 		block(nil, noDataError);
 	}
 	
@@ -40,7 +40,7 @@
 	
 	NSError *nullInDataError = nil;
 	if (inData == NULL || [inData length] == 0) {
-		nullInDataError = [NSError errorWithDomain:kJSONDeserializerErrorDomain code:kJSONScannerErrorCode_NothingToScan userInfo:NULL];
+		nullInDataError = [NSError errorWithDomain:SCAVENGERkJSONDeserializerErrorDomain code:kJSONScannerErrorCode_NothingToScan userInfo:NULL];
 		block(nil, nullInDataError);
 	}
 			  

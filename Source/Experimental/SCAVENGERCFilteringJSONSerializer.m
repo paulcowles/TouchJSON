@@ -6,9 +6,9 @@
 //  Copyright 2010 toxicsoftware.com. All rights reserved.
 //
 
-#import "CFilteringJSONSerializer.h"
+#import "SCAVENGERCFilteringJSONSerializer.h"
 
-@implementation CFilteringJSONSerializer
+@implementation SCAVENGERCFilteringJSONSerializer
 
 @synthesize tests;
 @synthesize convertersByName;

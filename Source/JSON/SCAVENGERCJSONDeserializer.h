@@ -31,7 +31,7 @@
 
 #import "SCAVENGERCJSONScanner.h"
 
-extern NSString *const kJSONDeserializerErrorDomain /* = @"CJSONDeserializerErrorDomain" */;
+extern NSString *const SCAVENGERkJSONDeserializerErrorDomain /* = @"CJSONDeserializerErrorDomain" */;
 
 enum {
     kJSONDeserializationOptions_MutableContainers = kJSONScannerOptions_MutableContainers,

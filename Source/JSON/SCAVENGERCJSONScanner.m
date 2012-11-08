@@ -35,7 +35,7 @@
 #define TREAT_COMMENTS_AS_WHITESPACE 0
 #endif // !defined(TREAT_COMMENTS_AS_WHITESPACE)
 
-NSString *const kJSONScannerErrorDomain = @"kJSONScannerErrorDomain";
+NSString *const SCAVENGERkJSONScannerErrorDomain = @"kJSONScannerErrorDomain";
 
 inline static int HexToInt(char inCharacter)
     {
@@ -216,7 +216,7 @@ static id kNSNO = NULL;
                     @"Could not scan object. Character not a valid JSON character.", NSLocalizedDescriptionKey,
                     NULL];
                 [theUserInfo addEntriesFromDictionary:self.userInfoForScanLocation];
-                *outError = [NSError errorWithDomain:kJSONScannerErrorDomain code:kJSONScannerErrorCode_CouldNotScanObject userInfo:theUserInfo];
+                *outError = [NSError errorWithDomain:SCAVENGERkJSONScannerErrorDomain code:kJSONScannerErrorCode_CouldNotScanObject userInfo:theUserInfo];
                 }
             break;
         }
@@ -382,7 +382,7 @@ static id kNSNO = NULL;
                     @"Could not scan array. Could not scan a value.", NSLocalizedDescriptionKey,
                     NULL];
                 [theUserInfo addEntriesFromDictionary:self.userInfoForScanLocation];
-                *outError = [NSError errorWithDomain:kJSONScannerErrorDomain code:kJSONScannerErrorCode_ArrayValueScanFailed userInfo:theUserInfo];
+                *outError = [NSError errorWithDomain:SCAVENGERkJSONScannerErrorDomain code:kJSONScannerErrorCode_ArrayValueScanFailed userInfo:theUserInfo];
                 }
             [theArray release];
             return(NO);
@@ -641,7 +641,7 @@ static id kNSNO = NULL;
         inDescription, NSLocalizedDescriptionKey,
         NULL];
     [theUserInfo addEntriesFromDictionary:self.userInfoForScanLocation];
-    NSError *theError = [NSError errorWithDomain:kJSONScannerErrorDomain code:inCode userInfo:theUserInfo];
+    NSError *theError = [NSError errorWithDomain:SCAVENGERkJSONScannerErrorDomain code:inCode userInfo:theUserInfo];
     return(theError);
     }
 

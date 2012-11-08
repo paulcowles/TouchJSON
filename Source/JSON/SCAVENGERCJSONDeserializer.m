@@ -32,7 +32,7 @@
 #import "SCAVENGERCJSONScanner.h"
 #import "SCAVENGERCDataScanner.h"
 
-NSString *const kJSONDeserializerErrorDomain  = @"CJSONDeserializerErrorDomain";
+NSString *const SCAVENGERkJSONDeserializerErrorDomain  = @"CJSONDeserializerErrorDomain";
 
 @interface SCAVENGERCJSONDeserializer ()
 @end
@@ -103,7 +103,7 @@ NSString *const kJSONDeserializerErrorDomain  = @"CJSONDeserializerErrorDomain";
     if (inData == NULL || [inData length] == 0)
         {
         if (outError)
-            *outError = [NSError errorWithDomain:kJSONDeserializerErrorDomain code:kJSONScannerErrorCode_NothingToScan userInfo:NULL];
+            *outError = [NSError errorWithDomain:SCAVENGERkJSONDeserializerErrorDomain code:kJSONScannerErrorCode_NothingToScan userInfo:NULL];
 
         return(NULL);
         }
@@ -123,7 +123,7 @@ NSString *const kJSONDeserializerErrorDomain  = @"CJSONDeserializerErrorDomain";
     if (inData == NULL || [inData length] == 0)
         {
         if (outError)
-            *outError = [NSError errorWithDomain:kJSONDeserializerErrorDomain code:kJSONScannerErrorCode_NothingToScan userInfo:NULL];
+            *outError = [NSError errorWithDomain:SCAVENGERkJSONDeserializerErrorDomain code:kJSONScannerErrorCode_NothingToScan userInfo:NULL];
 
         return(NULL);
         }
@@ -143,7 +143,7 @@ NSString *const kJSONDeserializerErrorDomain  = @"CJSONDeserializerErrorDomain";
     if (inData == NULL || [inData length] == 0)
         {
         if (outError)
-            *outError = [NSError errorWithDomain:kJSONDeserializerErrorDomain code:kJSONScannerErrorCode_NothingToScan userInfo:NULL];
+            *outError = [NSError errorWithDomain:SCAVENGERkJSONDeserializerErrorDomain code:kJSONScannerErrorCode_NothingToScan userInfo:NULL];
 
         return(NULL);
         }
